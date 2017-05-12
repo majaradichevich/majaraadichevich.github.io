@@ -1,0 +1,394 @@
+<!DOCTYPE <html>
+<html>
+<head>
+		<meta charset="UTF-8" />
+<style>   
+.button {
+    background-color: #FA58F4; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {background-color: #E148C8;} 
+.button2 {background-color: #CF6DBF  ;} 
+.button3 {background-color: #D516DE  ; color: black;} 
+.button4 {background-color: #F4009F  ;} 
+.button5{background-color: #CA7CCE ; color: black;} 
+.button6{background-color: #DA20F7  ;} 
+.button7{background-color:  #E952B5  ;} 
+.button8{background-color: #F018A5  ;}
+.button9{background-color: #EA53B6  ;}
+
+</style>
+
+
+</head>
+<title>Донации</title>
+<body>
+	
+<body background="donacii.jpg"/>
+
+
+
+<div class="image">
+    <a href="./Donacii.html"><img src="zaedno.jpg" height="500" width="100%" style="float:left"></a> 
+    
+
+<button class="button button1"><a href="./pochetna.html"><font color="black">Почетна</font></a></button>
+<button class="button button2"><a href="./zakancerot.html"><font color="black">За канцерот</font></a></button>
+<button class="button button3"><a href="./stadiumi.html"><font color="black">Хемотерапија</font></a></button>
+<button class="button button4"><a href="./recepti.html"><font color="black">Рецепти</font></a></button>
+<button class="button button5"><a href="./dieti.html"><font color="black">Исхрана</font></a></button>
+<button class="button button6"><a href="./soveti.html"><font color="black">Совети</font></a></button>
+<button class="button button7"><a href="./bolnici.html"><font color="black"</font>Болници</a></button>
+<button class="button button8"><a href="./Donacii.html"><font  color="black">Донации</font></a></button>
+<button class="button button9"><a href="./lekovi.html"><font color="black">Лекови</font></a></button>
+</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/mk_MK/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 1</div>
+  <img src="donacii1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 /2</div>
+  <img src="donacii2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="donacii3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="donacii44.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8000); 
+}
+
+
+</script>
+
+<style>
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana,sans-serif;}
+
+.kopce {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+}
+
+.kopce ul {
+    margin: 0;
+    padding: 0;
+}
+
+.kopce ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.kopce1.prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.kopce1 .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.kopce2{
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.kopce2 li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.denovi {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.denovi li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+</head>
+<body>
+
+<style>
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top:20px;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.buttonteam {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonteam:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+	
+	<button type="buttonc" onclick="alert('За совети и помош контактирајте го нашиот тим')">КЛИКНИ!</button>
+
+
+<h2>Запознајте го нашиот тим</h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/14344935_1161666033882157_6870748064769173979_n.jpg?oh=c2c540ec5a0a6333135b18e0dc4125e4&oe=597CEA58" alt="Маја" style="width:100%">
+      <div class="container">
+        <h2>Билјана Радичевиќ</h2>
+        <p class="title">Претседател & Основач</p>
+        <p>bile_radicevic@hotmail.com</p>
+        <p><a href="https://www.facebook.com/dzolebitola/?fref=ts" class="buttonteam">Контакт</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="team1.jpg" alt="Maja" style="width:100%">
+      <div class="container"> 
+        <h2>Маја Радичевиќ</h2>
+        <p class="title">Потпретседател</p> 
+        <p>radicevikm@gmail.com</p>
+        <p><a href="https://www.facebook.com/dzolebitola/?fref=ts" class="buttonteam">Контакт</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/14670651_1094173944030363_5011201100806334391_n.jpg?oh=6cec139e38df52b06323de917de862b3&oe=59BC7A2B" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Стево Кусибојоски</h2>
+        <p class="title">Основач</p>
+        <p>kusibojoskistevo@outlook.com</p>
+        <p><a href="https://www.facebook.com/dzolebitola/?fref=ts" class="buttonteam">Контакт</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+<div class="fb-comments" data-href="https://scontent-vie1-1.xx.fbcdn.net/v/t1.0-9/14670651_1094173944030363_5011201100806334391_n.jpg?oh=6cec139e38df52b06323de917de862b3&amp;oe=59BC7A2B" data-numposts="5"></div>
+
+</body>
+</html>

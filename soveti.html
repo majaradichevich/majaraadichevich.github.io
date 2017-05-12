@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+			<meta charset="UTF-8" />
+
+<style> 
+
+   
+.button {
+    background-color: #FA58F4; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {background-color:#FA1691;} 
+.button2 {background-color:#EB88BD;} 
+.button3 {background-color:#FA1691; color: black;} 
+.button4 {background-color: #EB88BD;} 
+.button5{background-color: #FA1691; color: black;} 
+.button6{background-color: #EB88BD;} 
+.button7{background-color: #FA1691;} 
+.button8{background-color: #EB88BD;}
+.button9{background-color: #FA1691;}
+
+</style>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/mk_MK/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<title>Совети</title>
+</head>
+<body>
+
+<body background="ribbon.jpg">
+
+	
+
+<div class="fenster">
+    <a href="./soveti.html.jpg"><img src="fight.png" height="500" width="100%" style="float:left"></a> 
+    
+    </div>
+    
+
+<button class="button button1"><a href="./pochetna.html"><font color="black">Почетна</font></a></button>
+<button class="button button2"><a href="./zakancerot.html"><font color="black">За канцерот</font></a></button>
+<button class="button button3"><a href="./stadiumi.html"><font color="black">Хемотерапија</font></a></button>
+<button class="button button4"><a href="./recepti.html"><font color="black">Рецепти</font></a></button>
+<button class="button button5"><a href="./dieti.html"><font color="black">Исхрана</font></a></button>
+<button class="button button6"><a href="./soveti.html"><font color="black">Совети</font></a></button>
+<button class="button button7"><a href="./bolnici.html"><font  color="black"</font>Болници</a></button>
+<button class="button button8"><a href="./Donacii.html"><font color="black">Донации</font></a></button>
+<button class="button button9"><a href="./lekovi.html"><font color="black">Лекови</font></a></button>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 1</div>
+  <img src="revitta1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 /2</div>
+  <img src="graviolla.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="avoccado.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="shitake.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
+</script>
+
+<p><font size="4"color="black"><b>За да ги погледнете брошурите кликнете на линковите:</b></font></p>
+		<table>
+  <tr align="right">
+    <td><a href="Ishrana-bolni-od-karcinom-makedonski.pdf" download="filename"><font size="5"color="black">
+    	СОВЕТИ ЗА БОЛНИ ОД КАРЦИНОМ 
+    </font></a>
+</td>
+  </tr>
+</table>
+
+		<table>
+  <tr align="right">
+    <td><a href="doh-7950-mac.pdf" download="filename"><font size="5"color="black">
+    	ИСХРАНА НА ПАЦИЕНТИТЕ БОЛНИ ОД КАНЦЕР
+    </font></a>
+</td>
+  </tr>
+</table>
+
+
+		<table>
+  <tr align="right">
+    <td><a href="pobedete-go-rakot.pdf" download="filename"><font size="5"color="black">
+    	ПОБЕДЕТЕ ГО РАКОТ ВО ТРИ ЧЕКОРИ
+    </font></a>
+</td>
+  </tr>
+</table>
+
+	
+
+<div class="fenster">
+    <a href="./pochetna.html"><img src="box.jpg" height="500" width="80%" style="float:left"></a> 
+    
+    </div>
+    
+
+
+<div class="fenster">
+    <a href="./zakancerot.html"><img src="kancerkid3.jpg" height="500" width="80%" style="float:left"></a> 
+    
+    </div>
+    
+
+<iframe width="70%" height="600" src="https://www.youtube.com/embed/Ql14I5W4xOs" frameborder="0" allowfullscreen></iframe>
+
+<div class="fb-comments" data-href="http://127.0.0.1:8020/borbaprotivkancerot/soveti.html" data-numposts="10"></div>
+
+
+
+</body>
+</html>
